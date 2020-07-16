@@ -1,0 +1,196 @@
+<odoo>
+    <record id="catalog_auto_model_list_view" model="ir.ui.view">
+        <field name="name">catalog.auto.model</field>
+        <field name="model">catalog.auto.model</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="brand_id"/>
+            </tree>
+        </field>
+    </record>
+    <record id="catalog_auto_model_form_view" model="ir.ui.view">
+        <field name="name">catalog.auto.model.form.view</field>
+        <field name="model">catalog.auto.model</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="brand_id"/>
+                            <field name="vin_ids"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_catalog_auto_model" model="ir.actions.act_window">
+        <field name="name">Model</field>
+        <field name="res_model">catalog.auto.model</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Create the first Model</p>
+            </field>
+    </record>
+
+    <record id="catalog_auto_vin_list_view" model="ir.ui.view">
+        <field name="name">catalog.auto.vin.list.view</field>
+        <field name="model">catalog.auto.vin</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="vin"/>
+                <field name="brand_id"/>
+                <field name="model_id"/>
+            </tree>
+        </field>
+    </record>
+    <record id="catalog_auto_vin_form_view" model="ir.ui.view">
+        <field name="name">catalog.auto.vin.form.view</field>
+        <field name="model">catalog.auto.vin</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="vin"/>
+                            <field name="brand_id"/>
+                            <field name="model_id"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_catalog_auto_vin" model="ir.actions.act_window">
+        <field name="name">VIN</field>
+        <field name="res_model">catalog.auto.vin</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Create the first Vin</p>
+            </field>
+    </record>
+
+    <record id="catalog_auto_engine_code_list_view" model="ir.ui.view">
+        <field name="name">catalog.auto.engine.code.list.view</field>
+        <field name="model">catalog.auto.engine.code</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="brand_id"/>
+            </tree>
+        </field>
+    </record>
+    <record id="catalog_auto_engine_code_form_view" model="ir.ui.view">
+        <field name="name">catalog.auto.engine.code.form.view</field>
+        <field name="model">catalog.auto.engine.code</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="brand_id"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_catalog_auto_engine_code" model="ir.actions.act_window">
+        <field name="name">Engine Code</field>
+        <field name="res_model">catalog.auto.engine.code</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Create the first Engine Code</p>
+            </field>
+    </record>
+
+    <record id="catalog_auto_parts_list_view" model="ir.ui.view">
+        <field name="name">catalog.auto.parts.list.view</field>
+        <field name="model">catalog.auto.parts</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="brand_id"/>
+            </tree>
+        </field>
+    </record>
+    <record id="catalog_auto_parts_form_view" model="ir.ui.view">
+        <field name="name">catalog.auto.parts.form.view</field>
+        <field name="model">catalog.auto.parts</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="brand_id"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_catalog_auto_parts" model="ir.actions.act_window">
+        <field name="name">Parts</field>
+        <field name="res_model">catalog.auto.parts</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Create the first parts</p>
+            </field>
+    </record>
+
+    <record id="catalog_auto_color_list_view" model="ir.ui.view">
+        <field name="name">catalog.color.list.view</field>
+        <field name="model">catalog.auto.color</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+    <record id="action_catalog_auto_color" model="ir.actions.act_window">
+        <field name="name">Car Color</field>
+        <field name="res_model">catalog.auto.color</field>
+        <field name="view_mode">tree</field>
+        <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Create the first color</p>
+            </field>
+    </record>
+    <record id="catalog_auto_transmission_list_view" model="ir.ui.view">
+        <field name="name">catalog.auto.transmission.list.view</field>
+        <field name="model">catalog.auto.transmission</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+    <record id="action_catalog_auto_transmission" model="ir.actions.act_window">
+        <field name="name">Transmission</field>
+        <field name="res_model">catalog.auto.transmission</field>
+        <field name="view_mode">tree</field>
+        <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Create the first transmission</p>
+            </field>
+    </record>
+    <record id="catalog_auto_engine_volume_list_view" model="ir.ui.view">
+        <field name="name">catalog.auto.engine.volume.list.view</field>
+        <field name="model">catalog.auto.engine.volume</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+    <record id="action_catalog_auto_engine_volume" model="ir.actions.act_window">
+        <field name="name">Engine Volume</field>
+        <field name="res_model">catalog.auto.engine.volume</field>
+        <field name="view_mode">tree</field>
+        <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Create the first engine volume</p>
+            </field>
+    </record>
+</odoo>

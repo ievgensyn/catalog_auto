@@ -1,0 +1,10 @@
+<odoo>
+    <menuitem id="menu_catalog_auto" parent="stock.menu_stock_config_settings" sequence="4" name="Catalog Auto"/>
+    <menuitem id="menu_catalog_auto_model" parent="menu_catalog_auto" action="catalog_auto.action_catalog_auto_model"/>
+    <menuitem id="menu_catalog_auto_vin" parent="menu_catalog_auto" action="catalog_auto.action_catalog_auto_vin"/>
+    <menuitem id="menu_catalog_auto_engine_code" parent="menu_catalog_auto" action="catalog_auto.action_catalog_auto_engine_code"/>
+    <menuitem id="menu_catalog_auto_parts" parent="menu_catalog_auto" action="catalog_auto.action_catalog_auto_parts"/>
+    <menuitem id="menu_catalog_auto_color" parent="menu_catalog_auto" action="catalog_auto.action_catalog_auto_color"/>
+    <menuitem id="menu_catalog_auto_transmission" parent="menu_catalog_auto" action="catalog_auto.action_catalog_auto_transmission"/>
+    <menuitem id="menu_catalog_auto_engine_volume" parent="menu_catalog_auto" action="catalog_auto.action_catalog_auto_engine_volume"/>
+</odoo>
