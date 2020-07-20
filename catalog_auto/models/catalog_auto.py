@@ -25,8 +25,6 @@ class Vin(models.Model):
     ]
 
     vin = fields.Char(size=14)
-    brand_id = fields.Many2one(
-        comodel_name='product.brand')
     model_id = fields.Many2one(
         comodel_name='catalog.auto.model')
 
@@ -39,8 +37,8 @@ class EngineCode(models.Model):
     ]
 
     name = fields.Char(size=10)
-    brand_id = fields.Many2one(
-        comodel_name='product.brand')
+    model_id = fields.Many2one(
+        comodel_name='catalog.auto.model')
 
 
 class Parts(models.Model):
@@ -51,8 +49,8 @@ class Parts(models.Model):
     ]
 
     name = fields.Char(size=14)
-    brand_id = fields.Many2one(
-        comodel_name='product.brand')
+    model_id = fields.Many2one(
+        comodel_name='catalog.auto.model')
 
 
 class Color(models.Model):

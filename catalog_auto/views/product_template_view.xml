@@ -1,0 +1,54 @@
+<odoo>
+    <record id="catalog_auto_product_tmpl_view_form_inherited" model="ir.ui.view">
+        <field name="name">catalog.auto.product.tmpl.view.form.inherited</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='general_information']/group[2]" position="before">
+                <group string="Catalog Details">
+                    <group>
+                        <field name="catalog_auto_model"/>
+                        <field name="catalog_auto_vin"/>
+                        <field name="catalog_auto_engine_code"/>
+                        <field name="catalog_auto_parts"/>
+                        <field name="catalog_auto_transmission"/>
+                        <label for="catalog_auto_last_odometer_value"/>
+                        <div class="o_row">
+                            <field name="catalog_auto_last_odometer_value"/>
+                            <span>km</span>
+                        </div>
+                    </group>
+                    <group>
+                        <field name="catalog_auto_year"/>
+                        <field name="catalog_auto_car_color"/>
+                        <field name="catalog_auto_fuel_type"/>
+                        <field name="catalog_auto_power"/>
+                        <field name="catalog_auto_engine_volume"/>
+                    </group>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="catalog_auto_model_group_by" model="ir.ui.view">
+        <field name="name">catalog.auto.model.product.template.search.inherit</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_search_view"/>
+        <field name="arch" type="xml">
+             <filter name="consumable" position="after">
+               <filter name="catalog_auto_model" string="Model" domain="[('catalog_auto_model', '!=', False)]"/>
+               <filter name="catalog_auto_car_color" string="Car Color" domain="[('catalog_auto_car_color', '!=', False)]"/>
+               <filter name="catalog_auto_engine_code" string="Engine Code" domain="[('catalog_auto_engine_code', '!=', False)]"/>
+               <filter name="catalog_auto_vin" string="VIN" domain="[('catalog_auto_vin', '!=', False)]"/>
+               <filter name="catalog_auto_year" string="VIN" domain="[('catalog_auto_year', '!=', False)]"/>
+            </filter>
+            <xpath expr="//search" position="inside">
+                  <filter string="Model" name="model_car" context="{'group_by':'catalog_auto_model'}"/>
+                  <filter string="Engine Code" name="engine_code_car" context="{'group_by':'catalog_auto_engine_code'}"/>
+                  <filter string="Car Color" name="car_color" context="{'group_by':'catalog_auto_car_color'}"/>
+                  <filter string="VIN" name="vin_car" context="{'group_by':'catalog_auto_vin'}"/>
+                  <filter string="Year" name="year_car" context="{'group_by':'catalog_auto_year'}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

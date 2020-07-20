@@ -29,4 +29,6 @@ class ProductTemplate(models.Model):
         comodel_name='catalog.auto.fuel.type', string='Fuel type')
     catalog_auto_power = fields.Many2one(
         comodel_name='catalog.auto.power', string='Power')
-
+    catalog_auto_last_odometer_value = fields.Integer(
+        readonly=False, track_visibility='onchange',
+        string='Odometer value')
