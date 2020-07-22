@@ -8,7 +8,7 @@ class Model(models.Model):
         ('name_uniq', 'unique (name)', 'Model name already exists !')
     ]
 
-    name = fields.Char(size=10)
+    name = fields.Char(size=50)
     brand_id = fields.Many2one(
         comodel_name='product.brand')
     vin_ids = fields.One2many(
