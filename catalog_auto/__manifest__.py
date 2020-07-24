@@ -1,6 +1,6 @@
 {
     'name': 'Catalog auto',
-    'version': '13.0.0.0.1',
+    'version': '13.0.0.0.2',
     'license': 'Other proprietary',
     'category': 'Technical Settings',
 
@@ -17,6 +17,7 @@
     ],
 
     'data': [
+        'security/security.xml',
         'security/ir.model.access.csv',
         'views/catalog_auto_view.xml',
         'views/product_brand_view.xml',
