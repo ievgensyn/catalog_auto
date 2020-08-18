@@ -7,11 +7,11 @@
             <xpath expr="//page[@name='general_information']/group[2]" position="before">
                 <group string="Catalog Details">
                     <group>
-                        <field name="catalog_auto_model"/>
-                        <field name="catalog_auto_vin"/>
+                        <field name="catalog_auto_model_id"/>
+                        <field name="catalog_auto_vin_id"/>
                         <field name="catalog_auto_engine_code"/>
-                        <field name="catalog_auto_parts"/>
-                        <field name="catalog_auto_transmission"/>
+                        <field name="catalog_auto_parts_id"/>
+                        <field name="catalog_auto_transmission_id"/>
                         <label for="catalog_auto_last_odometer_value"/>
                         <div class="o_row">
                             <field name="catalog_auto_last_odometer_value"/>
@@ -20,10 +20,10 @@
                     </group>
                     <group>
                         <field name="catalog_auto_year"/>
-                        <field name="catalog_auto_car_color"/>
-                        <field name="catalog_auto_fuel_type"/>
-                        <field name="catalog_auto_power"/>
-                        <field name="catalog_auto_engine_volume"/>
+                        <field name="catalog_auto_car_color_id"/>
+                        <field name="catalog_auto_fuel_type_id"/>
+                        <field name="catalog_auto_power_id"/>
+                        <field name="catalog_auto_engine_volume_id"/>
                     </group>
                 </group>
             </xpath>

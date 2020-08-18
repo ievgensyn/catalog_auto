@@ -19,9 +19,14 @@
                         <group>
                             <field name="name"/>
                             <field name="brand_id"/>
-                            <field name="vin_ids"/>
+
                         </group>
                     </group>
+                    <notebook>
+                        <page name="catalog_vin" string="VIN">
+                            <field name="vin_ids"/>
+                        </page>
+                    </notebook>
                 </sheet>
             </form>
         </field>
