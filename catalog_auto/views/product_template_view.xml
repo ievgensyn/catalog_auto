@@ -15,7 +15,7 @@
                         <label for="catalog_auto_last_odometer_value"/>
                         <div class="o_row">
                             <field name="catalog_auto_last_odometer_value"/>
-                            <span>km</span>
+                            <span><field name="catalog_auto_odometer_uom" widget="radio"/> </span>
                         </div>
                     </group>
                     <group>

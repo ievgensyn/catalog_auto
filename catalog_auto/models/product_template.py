@@ -31,3 +31,6 @@ class ProductTemplate(models.Model):
     catalog_auto_last_odometer_value = fields.Integer(
         readonly=False, track_visibility='onchange',
         string='Odometer value')
+    catalog_auto_odometer_uom = fields.Selection(
+        selection=[('mile', 'Miles'), ('km', 'km')],
+        default='km')
