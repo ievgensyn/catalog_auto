@@ -24,7 +24,7 @@ class Vin(models.Model):
         ('name_uniq', 'unique (name)', 'VIN name already exists !')
     ]
 
-    vin = fields.Char(size=14)
+    vin = fields.Char(size=17)
     model_id = fields.Many2one(
         comodel_name='catalog.auto.model')
 
