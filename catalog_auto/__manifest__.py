@@ -1,6 +1,6 @@
 {
     'name': 'Catalog auto',
-    'version': '13.0.0.0.3',
+    'version': '13.0.0.0.4',
     'license': 'Other proprietary',
     'category': 'Technical Settings',
 

@@ -49,6 +49,9 @@
                   <filter string="VIN" name="vin_car" context="{'group_by':'catalog_auto_vin'}"/>
                   <filter string="Year" name="year_car" context="{'group_by':'catalog_auto_year'}"/>
             </xpath>
+            <xpath expr="//field[@name='name']" position="after">
+                <field name="catalog_auto_vin" string="VIN" filter_domain="[('catalog_auto_vin', 'ilike', self)]"/>
+            </xpath>
         </field>
     </record>
 </odoo>
